@@ -3,7 +3,7 @@
 package main
 
 import (
-	. "dnsgrep/DNSBinarySearch"
+	. "github.com/tomnomnom/dnsgrep/DNSBinarySearch"
 
 	"fmt"
 	"os"
@@ -26,7 +26,7 @@ func main() {
 	// command line parsing
 	_, err := parser.Parse()
 	if err != nil {
-		panic(err)
+		return
 	}
 
 	// increase our limits x10 as we're running this locally

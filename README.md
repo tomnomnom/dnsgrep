@@ -1,4 +1,7 @@
 # DNSGrep
+
+A fork of @erbbysam's DNSGrep that you can install with `go get`.
+
 A utility for quickly searching presorted DNS names. Built around the Rapid7 rdns & fdns dataset.
 
 # How does it work?
@@ -25,12 +28,7 @@ Additionally, this utility does not handle the edge cases(start/end) of files an
 `go get` the following packages:
 
 ```
-# used for dnsgrep cli flags
-go get "github.com/jessevdk/go-flags"
-# used by the experimental server for http routing
-go get "github.com/gorilla/mux"
-# pull in a string reversal function
-go get "github.com/golang/example/stringutil"
+go get -u github.com/tomnomnom/dnsgrep
 
 ```
 
@@ -52,7 +50,7 @@ Generate fdns_a.sort.txt and rdns.sort.txt first using the scripts found in the 
 
 Run the command line utility:
 ```
-go run dnsgrep.go -f DNSBinarySearch/test_data.txt -i "amiccom.com.tw"
+dnsgrep -f DNSBinarySearch/test_data.txt -i "amiccom.com.tw"
 ```
 
 Run the experimental server in the same folder as fdns_a.sort & rdns.sort.txt:
