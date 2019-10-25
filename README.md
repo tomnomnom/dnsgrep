@@ -29,7 +29,6 @@ Additionally, this utility does not handle the edge cases(start/end) of files an
 
 ```
 go get -u github.com/tomnomnom/dnsgrep
-
 ```
 
 # Run
@@ -78,4 +77,4 @@ via https://unix.stackexchange.com/a/350068
 
 # License
 
-See LICENSE file.
+See [LICENSE](https://github.com/tomnomnom/dnsgrep/blob/master/LICENSE) file.
